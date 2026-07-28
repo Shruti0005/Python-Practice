@@ -8,7 +8,7 @@ marks = {
     "Geography": 90
 }
 
-def convert_Grade(mark):
+def convert_grade(mark):
     if mark >= 85:
         return "A"
     elif mark >= 65:
@@ -20,6 +20,6 @@ def convert_Grade(mark):
     
 grade = {}
 for k, v in marks.items():
-    grade[k] = convert_Grade(v)
+    grade[k] = convert_grade(v)
     
 print(grade)
