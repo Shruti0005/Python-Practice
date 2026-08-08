@@ -20,8 +20,10 @@ ____/______/______/______/______/_____"=.o|o_.--""___/______/______/______/____
 /______/______/______/______/______/______/______/______/______/______/[TomekK]
 *******************************************************************************
 ''')
+
 print("Welcome to Treasure Island.")
 print("Your mission is to find the trasure.")
+
 choice1 = input('You\'re at a crossroad, where do you want to go? Type "left" or "right"? ').lower()
 
 if choice1 == "left":
@@ -29,20 +31,27 @@ if choice1 == "left":
 
     if choice2 == 'wait':
         choice3 = input('You\'re at the island unharmed. There is house with three doors.One red, one blue and one yellow. ').lower()
+              
         if choice3 == 'red':
             print("Burned by fire. Game Over.")
+        
         elif choice3 == 'yellow':
             print("You found the treasure. You Win!")
+        
         elif choice3 == 'blue':
             print("Eaten by beasts. Game Over.")
+        
         else:
             print("You choose a door that doesn't exist. Game Over.")
 
     elif choice2 == 'swim':
         print("Attacked by trout. Game Over.")
+    
     else:
         print("You chose choice that doesn't exist. Game Over.")
+
 elif choice1 == 'right':
     print("Fall int a hole. Game Over.")
+
 else:
     print("You choose path that doesn't exist. Game Over.")
